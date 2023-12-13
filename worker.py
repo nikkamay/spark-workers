@@ -29,6 +29,7 @@ def add():
     return "Use post to add" # replace with form template
   else:
     token=get_api_key()
+    token= token.strip("\n")
     ret = addWorker(token,request.form['num'])
     return ret
 
@@ -38,7 +39,7 @@ def addWorker(token, num):
       tdata=json.load(p)
     tdata['name']='slave'+str(num)
     data=json.dumps(tdata)
-    url='https://www.googleapis.com/compute/v1/projects/spark-371009/zones/europe-west1-b/instances'
+    url='https://www.googleapis.com/compute/v1/projects/automatic-time-40031/zones/europe-west1-b/instances'
     headers={"Authorization": "Bearer "+token}
     resp=requests.post(url,headers=headers, data=data)
     if resp.status_code==200:     
