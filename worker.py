@@ -3,7 +3,7 @@ from flask import request
 import requests
 import os
 import json
-app = Flask(__name__)
+app = Flask(_name_)
 
 def get_api_key() -> str:
     secret = os.environ.get("COMPUTE_API_KEY")
@@ -50,5 +50,5 @@ def addWorker(token, num):
 
 
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     app.run(host='0.0.0.0',port='8080')
