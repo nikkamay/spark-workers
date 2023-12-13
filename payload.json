@@ -26,7 +26,7 @@
   "guestAccelerators": [],
   "keyRevocationActionType": "STOP",
   "labels": {},
-  "machineType": "projects/automatic-time-40031/zones/europe-west1-b/machineTypes/e2-medium",
+  "machineType": "projects/automatic-time-400314/zones/europe-west1-b/machineTypes/e2-medium",
   "metadata": {
     "items": [
       {
