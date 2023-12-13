@@ -9,10 +9,10 @@
     {
       "autoDelete": true,
       "boot": true,
-      "deviceName": "slave3",
+      "deviceName": "slave4",
       "initializeParams": {
         "diskSizeGb": "10",
-        "diskType": "projects/automatic-time-40031/zones/us-west4-b/diskTypes/pd-balanced",
+        "diskType": "projects/automatic-time-400314/zones/us-west4-b/diskTypes/pd-balanced",
         "labels": {},
         "sourceImage": "projects/ubuntu-os-cloud/global/images/ubuntu-2204-jammy-v20231201"
       },
